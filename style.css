@@ -1,0 +1,97 @@
+/*Body -------------------*/
+#body{
+    background-color:whitesmoke;
+}
+
+/*Stat Divider ----------------------*/
+#userStats{
+    order: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0 0 20px;
+    width:200px;    
+}
+#divider{
+    display:flex;
+    order: 2;
+    height:100%;
+    width:10px;
+    background-color:black;
+}
+#enemyStats{
+    order: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px 0 0 20px;
+    width:200px;
+}
+/*Screen ----------------------*/
+#screen{
+    background-color:blue;
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-flow: column nowrap;    
+}
+
+/*Buttons ----------------------*/
+button{
+    border:none;
+}
+#reset-game{
+    border-radius: 5px;
+    background-color:green;
+}
+#heal{
+    border-radius: 5px;
+    background-color:red;
+}
+#fight{
+    border-radius: 5px;
+    background-color:orange;
+}
+
+/*HERO DIVS*/
+.hero-div {
+    border-radius:10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:blue;
+    height:40px;
+    width:100px;
+    margin: 20px 20px 20px 20px;
+}.hero-div:hover{
+    cursor:pointer;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  background-color:white;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 3 / 4;
+  background-color:orange;
+  grid-row: 2;
+}
+.three {
+  grid-row: 2 / 5;
+  grid-column: 1 / 3;
+}
+.four {
+  background-color:grey;
+  grid-column: 3 / 3;
+  grid-row: 3 / 5;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border:10px solid black;
+}
